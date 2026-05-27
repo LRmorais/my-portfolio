@@ -10,6 +10,8 @@ export const profile = {
     'Engenheiro full-stack com 6+ anos entregando sistemas críticos para governo, fintech e grandes mídias. Especialista em Java 21, Angular 21 e React Native — com patente concedida pelo INPI e publicação no IEEE.',
 }
 
+export const clients = ['Previ', 'Gazeta do Povo', 'SEFA-PA', 'IGEPPS', 'CBMPA', 'CEAMAZON / UFPA']
+
 export const stats = [
   { label: 'Anos de experiência', value: '6+' },
   { label: 'Projetos entregues', value: '20' },

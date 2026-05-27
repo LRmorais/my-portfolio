@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { profile, experiences, skills, projects, publications, stats, education, certifications } from './data'
+import { profile, experiences, skills, projects, publications, stats, education, certifications, clients } from './data'
 import avatar from './images/perfil.jpg'
 
 function useTheme() {
@@ -81,7 +81,11 @@ function Hero() {
               GitHub →
             </a>
           </div>
-          <p className="mt-5 text-xs text-neutral-400">📍 {profile.location} · trabalho remoto</p>
+          <div className="flex flex-wrap gap-2 mt-5 items-center">
+            <span className="text-xs text-neutral-400 mr-1">Trabalhei com:</span>
+            {clients.map(c => <span key={c} className="chip">{c}</span>)}
+          </div>
+          <p className="mt-3 text-xs text-neutral-400">📍 {profile.location} · trabalho remoto</p>
         </div>
         <div className="relative flex justify-center md:justify-end">
           <div className="absolute inset-0 -z-10 translate-y-6 md:translate-y-8 md:translate-x-6 blur-3xl opacity-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-[2rem]" />
